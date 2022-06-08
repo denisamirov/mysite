@@ -1,0 +1,22 @@
+{% extends "layout/basic.html" %}
+{% load static %}
+{% block style %}
+  <link rel="stylesheet" type="text/css"
+  href="{% static 'app_1/all_classes.css'%}">
+{% endblock %}
+
+{% block content %}
+
+<h1>Расписание занятий</h1>
+
+
+{% for sh in all %}
+<p>
+<form action="http://127.0.0.1:8000/class/{{sh.name}}">
+<button class="button_1" type="submit">{{sh.name}}</button>
+</form>
+</p>
+
+
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,30 @@
+.my_img {
+    margin: 2.5% 5% 0.5% 0%;
+    width: 150%;
+    height: auto;
+
+
+}
+
+
+
+.a {
+    background-color: #f1f1f1;
+    margin: 0.35% 0% 0% 11%;
+    padding: 15% 2% 2% 2%;
+    min-width: ce;
+    box-shadow: -30px -30px 80px #d1d1d1, 30px 30px 80px rgba(11, 11, 12, 0.1);
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+h2 {
+    font-size:3vw;
+    font-family: Bradley Hand, cursive;
+}
+
+h4 {
+    font-size:2vw;
+    font-family: Bradley Hand, cursive;
+}

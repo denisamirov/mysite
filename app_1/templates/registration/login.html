@@ -1,0 +1,35 @@
+{% extends "layout/basic.html" %}
+{% load static %}
+{% block style %}
+  <link rel="stylesheet" type="text/css"
+  href="{% static 'app_1/login.css'%}">
+{% endblock %}
+
+{% block title %}
+
+<p style="margin-top: 10%">
+Вход
+</p>
+{% endblock %}
+
+{% block content %}
+<h2>
+    Вход
+</h2>
+
+{% if user.is_authenticated %}
+<p>
+    Вы уже выполнили вход
+</p>
+{% else %}
+<div class="divaf">
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="hidden" name="next" value="{{next}}">
+    <input type="submit" value="Войти">
+</form>
+</div>
+
+{% endif %}
+{% endblock %}

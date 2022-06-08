@@ -1,0 +1,90 @@
+{% extends "layout/basic.html" %}
+{% load static %}
+
+{% block style %}
+  <link rel="stylesheet" type="text/css"
+  href="{% static 'app_1/shedule.css'%}">
+{% endblock %}
+
+
+
+
+        {% block content %}
+        <div class="container-fluid">
+          <div class="row">
+            <img class='gif' src="{% static 'app_1/pictures/1.gif'%}">
+
+          </div>
+            <div class="row">
+              <div class="bl col-sm">
+                <img class='im' src="{% static 'app_1/pictures/1.png'%}">
+              </div>
+              <div class="text col-sm">
+                <div class="tabl">
+                <p class="p">Вторник, суббота</p>
+                дни проведения занятий
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="text col-sm">
+                    <div class="tabl">
+                    <p class="p"> 7 - 15 лет</p>
+                    возраст учеников, посещающих робототехнику
+                    </div>
+            </div>
+            <div class="bl col-sm">
+                <img class='im' src="{% static 'app_1/pictures/4.png'%}">
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card card text-white bg-secondary mb-3 h-100">
+                <img src="{% static 'app_1/pictures/1.png'%}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Расписание</h5>
+                  <p class="card-text">Выберите день, когда сможете посетить занятие</p>
+                  <a href="#" class="btn btn-dark">Выбрать</a>
+                </div>
+                <div class="card-footer">
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card text-white bg-secondary mb-3 р-50 h-100">
+                <img src="{% static 'app_1/pictures/2.png'%}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Направления</h5>
+                <p class="card-text">Выберите направление подготовки</p>
+                <a href="#" class="btn btn-dark">Выбрать</a>
+                </div>
+                <div class="card-footer">
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-white bg-secondary mb-3 h-100">
+                <img src="{% static 'app_1/pictures/3.png'%}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Проекты</h5>
+                  <p class="card-text">Посмотрите реалиализованные проекты</p>
+                  <a href="http://127.0.0.1:8000/projects/" class="btn btn-dark">Посмотреть</a>
+                </div>
+                <div class="card-footer">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+          </div>
+
+
+          
+    {% endblock %}

@@ -1,0 +1,36 @@
+.button_1 {
+    border-radius: 50px;
+    border: white;
+    background-color: #f1f1f1;
+    padding: 5% 8% 5%;
+    margin: 2% 3% 3% 2%;
+    min-width: ce;
+    box-shadow: -30px -30px 80px #d1d1d1, 30px 30px 80px rgba(11, 11, 12, 0.1);
+    font-size: 250%;
+    display: inline;
+    font-family: Bradley Hand, cursive;
+    
+}
+
+.button_1:hover {
+    background:#eeeded;
+    box-shadow:
+    1px 1px #abacab,
+    2px 2px #abacab,
+    3px 3px #abacab,
+    4px 4px #abacab,
+    5px 5px #abacab;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+  }
+
+p {display: inline;}
+form {display: inline;}
+
+
+h1 {color: rgb(80, 79, 79);
+    font-family: Bradley Hand, cursive;
+    margin-left: 2%;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;}

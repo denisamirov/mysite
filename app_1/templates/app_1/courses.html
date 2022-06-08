@@ -1,0 +1,51 @@
+{% extends "layout/basic.html" %}
+{% load static %}
+{% block style %}
+  <link rel="stylesheet" type="text/css"
+  href="{% static 'app_1/courses.css'%}">
+{% endblock %}
+
+{% block content %}
+
+<h1>Направления подготовки</h1>
+
+
+
+<p>
+<form action="http://127.0.0.1:8000/">
+<button class="button_1" type="submit">Программирование на Python</button>
+</form>
+</p>
+
+<p>
+    <form action="http://127.0.0.1:8000/">
+    <button class="button_1" type="submit">Веб-дизайн</button>
+    </form>
+    </p>
+    
+<p>
+    <form action="http://127.0.0.1:8000/">
+    <button class="button_1" type="submit">Робототехника</button>
+    </form>
+    </p>
+
+<p>
+    <form action="http://127.0.0.1:8000/">
+    <button class="button_1" type="submit">3D-моделирование</button>
+    </form>
+    </p>
+
+<p>
+    <form action="http://127.0.0.1:8000/">
+    <button class="button_1" type="submit">Arduino и электричество</button>
+    </form>
+    </p>
+
+<p>
+    <form action="http://127.0.0.1:8000/">
+    <button class="button_1" type="submit">Программирование JavaScript</button>
+    </form>
+    </p>
+
+
+{% endblock %}

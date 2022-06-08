@@ -1,0 +1,19 @@
+td {
+  width: 30%;
+}
+
+h1 {color: rgb(80, 79, 79);
+    font-family: Bradley Hand, cursive;
+    margin-left: 2%;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;}
+
+img {
+  width: 100%;
+}
+
+table {
+  margin-left: 10%;
+  border: white;
+}

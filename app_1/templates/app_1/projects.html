@@ -1,0 +1,37 @@
+{% extends "layout/basic.html" %}
+{% load static %}
+{% block style %}
+  <link rel="stylesheet" type="text/css"
+  href="{% static 'app_1/projects.css'%}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+        <img class='my_img' src="{% static 'app_1/pictures/project_1.jpg'%}">
+    </div>
+    <div class="col a">
+        <h2>Автоматизированная система полива и освещения растений</h2>
+        <h4>Автоматический полив</h4>
+        <h4>Автоматическое освещение</h4>
+    </div>
+   </div>
+
+<div class="row">
+    <div class="col-3">
+        <img class='my_img' src="{% static 'app_1/pictures/project_2.jpg'%}">
+    </div>
+    <div class="col a">
+        <h2>Робототизированная система очистки солнечных панелей</h2>
+        <h4>Механическая очистка</h4>
+        <h4>Работа на солнечной батареии</h4>
+        
+    </div>
+    </div>
+</div>
+
+
+
+  
+{% endblock %}

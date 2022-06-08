@@ -1,0 +1,65 @@
+
+table {
+    margin-top: 2%;
+}
+
+tr {
+    color: rgb(63, 63, 63);
+    font-size: 120%;
+}
+td {
+    width: 40%;
+	font-size:2vw;
+}
+
+label {
+    margin-left: 2%;
+    width: 100%;
+}
+
+textarea {
+    margin-left: 5%;
+    width: 100%;
+}
+
+select {
+    margin-left: 5%;
+	width: 100%;
+}
+
+input {
+    margin-left: 5%;
+	width: 100%;
+}
+
+.tok {
+	cursor: pointer;
+	border: 1px solid #000000;
+	background: #b5beb6;
+	box-shadow: inset 0px 20px 20px #ffffff;
+	border-radius: 8px;
+	padding: 8px 14px;
+	width: 120px;
+    margin-bottom: 2%;
+	margin-top: 5%;
+    font-size: 110%;
+    font-family: Bradley Hand, cursive;
+}
+.tok:hover {
+	box-shadow: inset 0px -20px 20px #ffffff;
+}
+
+.tok:focus
+{
+	outline:none;
+}
+
+.tok {
+	margin: 3% 0% 0% 0%;
+}
+
+
+
+input:focus {height: 200%;}
+
+p {color: red;}

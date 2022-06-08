@@ -1,0 +1,53 @@
+tr {color: rgb(255, 255, 255);
+font-size: 110%;
+font-family: Bradley Hand, cursive;
+text-align: center;}
+
+h1 {color: rgb(205, 255, 205);
+    font-family: Bradley Hand, cursive;
+    margin-left: 2%;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;}
+
+.theend {
+    border:1px solid rgb(255, 0, 0);
+}
+
+.theend_1 {
+    border:1px solid rgb(255, 145, 0);
+}
+
+
+.theend_2 {
+    border:1px solid rgb(251, 255, 0);
+}
+
+
+.theend_3 {
+    border:1px solid rgb(3, 255, 24);
+}
+
+
+.theend_4 {
+    border:1px solid rgb(0, 247, 255);
+}
+
+
+h1, table {
+    animation-duration: 5s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      opacity: 0%;
+    }
+  
+    to {
+      opacity: 100%;
+    }
+  }
+
+
+

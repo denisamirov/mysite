@@ -1,0 +1,25 @@
+{% extends "layout/basic.html" %}
+{% load static %}
+
+{% block style %}
+  <link rel="stylesheet" type="text/css"
+  href="{% static 'app_1/gallery.css'%}">
+{% endblock %}
+
+        {% block content %}
+          <h1> Наш фотобанк </h1>
+
+          <table border="1">
+            <tr><td><img class='my_img' src="{% static 'app_1/pictures/gallery_1.jpg'%}"></td>
+              <td><img class='my_img' src="{% static 'app_1/pictures/gallery_2.jpg'%}"></td>
+              <td><img class='my_img' src="{% static 'app_1/pictures/gallery_3.jpg'%}"></td><td></td></tr>
+
+            <tr><td><img class='my_img' src="{% static 'app_1/pictures/gallery_4.jpg'%}"></td>
+              <td><img class='my_img' src="{% static 'app_1/pictures/gallery_5.jpg'%}"></td>
+              <td><img class='my_img' src="{% static 'app_1/pictures/gallery_6.jpg'%}"></td><td></td></tr>
+
+            <tr><td><img class='my_img' src="{% static 'app_1/pictures/gallery_7.jpg'%}"></td>
+              <td><img class='my_img' src="{% static 'app_1/pictures/gallery_8.jpg'%}"></td>
+              <td><img class='my_img' src="{% static 'app_1/pictures/gallery_9.jpg'%}"></td><td></td></tr>    
+           </table>
+    {% endblock %}

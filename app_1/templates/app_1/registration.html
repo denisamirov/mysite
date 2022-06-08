@@ -1,0 +1,55 @@
+{% extends "layout/basic.html" %}
+{% load static %}
+
+{% block style %}
+  <link rel="stylesheet" type="text/css"
+  href="{% static 'app_1/form_registration.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        <div class="container">
+  <div class="row">
+      <div class="col-sm">
+        <table>
+            <tr><td>{{form.first_name.label}}</td>
+              <td>{{form.first_name}}</td>
+            {{form.first_name.errors}}
+            <tr><td>{{form.last_name.label}}</td>
+              <td>{{form.last_name}}</td>
+            {{form.last_name.errors}}
+
+            <tr><td>{{form.age.label}}</td>
+              <td>{{form.age}}</td>
+            {{form.age.errors}}
+
+            <tr><td>{{form.about.label}}</td>
+            <td>{{form.about}}</td>
+            {{form.about.errors}}
+
+            <tr><td>{{form.way.label}}</td>
+              <td>{{form.way}}</td>
+            {{form.way.errors}}
+
+            <tr><td>{{form.email.label}}</td>
+              <td>{{form.email}}</td>
+            {{form.email.errors}}
+
+            <tr><td>{{form.phone_number.label}}</td>
+              <td>{{form.phone_number}}</td>
+            <td><div style="color:red; margin-top: 2%; margin-left: 5%; font-size:50%;">{{form.phone_number.errors}}</div></td></tr>
+        </table>
+          <div class="col-sm">
+        <input class='tok' type="submit" value="Сохранить">
+          </div>
+      </div>
+  </div>
+        </div>
+    </form>
+
+
+
+
+{% endblock %}

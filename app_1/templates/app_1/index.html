@@ -1,0 +1,126 @@
+{% extends "layout/basic.html" %}
+<!--{% load static %}-->
+
+    {% block style %}
+    <link rel="stylesheet" type="text/css"
+    href="{% static 'app_1/index.css'%}">
+    {% endblock %}
+
+
+{% block content %}
+
+<h1>Расписание {{shedule.0.class_id}} класса</h1>
+<div class="container">
+          <div class="row">
+              <div class="bl col-sm">
+<table class="table table-dark">
+  <tbody>
+  <tr class="theend">
+      <td class="theend" rowspan="8">Понедельник</td>
+      {% for sh in shedule %}
+      {% if sh.week_day == 1 %}
+      <td>{{sh.time_id}}</td>
+      <td class="s">{{sh.lesson_id}}</td>
+  </tr>
+  {% endif %}
+  {% endfor %}
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+
+  <tr class="theend_1">
+      <td class="theend_1" rowspan="7">Вторник</td>
+      {% for sh in shedule %}
+      {% if sh.week_day == 2 %}
+      <td>{{sh.time_id}}</td>
+      <td>{{sh.lesson_id}}</td>
+  </tr>
+  {% endif %}
+  {% endfor %}
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+
+
+  <tr class="theend_2">
+      <td class="theend_2" rowspan="7">Среда</td>
+      {% for sh in shedule %}
+      {% if sh.week_day == 3 %}
+      <td>{{sh.time_id}}</td>
+      <td>{{sh.lesson_id}}</td>
+  </tr>
+  {% endif %}
+  {% endfor %}
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+
+
+  <tr class="theend_3">
+      <td class="theend_3" rowspan="7">Четверг</td>
+      {% for sh in shedule %}
+      {% if sh.week_day == 4 %}
+      <td>{{sh.time_id}}</td>
+      <td>{{sh.lesson_id}}</td>
+  </tr>
+  {% endif %}
+  {% endfor %}
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+
+
+ <tr class="theend_4">
+      <td class="theend_4" rowspan="7">Пятница</td>
+      {% for sh in shedule %}
+      {% if sh.week_day == 5 %}
+      <td>{{sh.time_id}}</td>
+      <td>{{sh.lesson_id}}</td>
+  </tr >
+  {% endif %}
+  {% endfor %}
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+
+  </tbody>
+</table>
+
+          </div>
+          </div>
+</div>
+
+
+{% endblock %}
+
+
